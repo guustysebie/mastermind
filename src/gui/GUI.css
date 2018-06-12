@@ -1,0 +1,245 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+
+
+    Created on : 06-May-2018, 22:21:42
+    Author     : Laurens
+*/
+
+GridPane{
+    -fx-background-image: url('../fotos/test2.jpg');
+    -fx-background-size:stretch;
+    -fx-text-fill:white;
+    -fx-background-opacity:0.7;
+}
+
+
+
+.root
+{
+    -fx-background-image: url('../fotos/test2.jpg');
+    -fx-background-size:stretch;
+    -fx-background-opacity:0.7;
+}
+
+.label{
+    -fx-text-fill:white;
+}
+
+.choice-box{
+    -fx-background-color: #ef6109;
+    -fx-background-radius: 30;
+}
+
+.choice-boxSpelbord{
+    -fx-text-fill:white;
+    -fx-background-color:  #b24a11;
+}
+
+.choice-box .label{
+    -fx-text-fill:black;
+}
+
+.choice-box:focused{
+    -fx-text-fill:white;
+}
+
+.choice-box:hover{
+    -fx-text-fill:white;
+}
+
+
+.Taal{
+    -fx-text-fill: #111111;
+    -fx-font-family: 'Verdana', 'Calibri', 'sans-serif';
+    -fx-font-size: 19px;
+    -fx-border-color:#111111;
+    -fx-border-width:3px;
+
+}
+
+.Taal:hover{
+    -fx-cursor:hand;
+    -fx-border-color:#ff6666;
+    -fx-border-width:5px;
+}
+
+.Taal:focused{
+    -fx-border-color:#ff6666;
+    -fx-border-width:2.5px;
+    -fx-font-weight:bold;
+}
+
+#btnNederlands{
+    -fx-background-image:url('../fotos/nederlands.png');
+    -fx-background-size:stretch;
+
+
+}
+
+#btnNederlands:focused{
+    -fx-font-size:18px;
+}
+
+#btnFrans{
+    -fx-background-image:url('../fotos/frans.png');
+    -fx-background-size:stretch;
+}
+
+#btnengels{
+    -fx-background-image:url('../fotos/brits.png');
+    -fx-background-size:stretch;
+}
+
+#btnDuits{
+    -fx-background-image:url('../fotos/duits.png');
+    -fx-background-size:stretch;
+}
+
+.terugTaal:focused{
+    -fx-border-color:#ff6666;
+    -fx-border-width:2.5px;   
+}
+
+.OrangeButton{
+    -fx-text-fill:white;
+    -fx-background-color:  #ef6109;
+    -fx-background-radius: 30;
+    -fx-spacing : 10;
+}
+
+.OrangeButtonSpelbord{
+    -fx-background-color: #b24a11;
+    -fx-text-fill:white;
+    -fx-background-radius: 30;
+}
+.OrangeButton:focused{
+    -fx-border-color:#ff6666;
+    -fx-border-width:2.5px;
+    -fx-border-radius:30;
+}
+
+.OrangeButton:hover{
+    -fx-font-weight: bold;
+    -fx-border-color: #ff6666;
+    -fx-border-width:5px;
+    -fx-cursor:hand;
+    -fx-border-radius:30;
+}
+
+.SpelbordRood,.SpelbordBlauw,.SpelbordGeel,.SpelbordWit,.SpelbordOranje,.SpelbordPaars,.SpelbordGroen,.SpelbordZwart{
+    -fx-font-weight: bold;
+    -fx-text-align: center;
+    -fx-padding:5 5 5 5;
+    -fx-text-align: center;
+    -fx-background-radius: 50%;
+
+}
+
+.SpelbordRood{
+    -fx-background-color: #FF4136;
+    -fx-text-fill: #FF4136;
+
+}
+
+.SpelbordBlauw{
+    -fx-background-color: #0074D9;
+    -fx-text-fill:  #0074D9;
+}
+
+.SpelbordGeel
+{
+    -fx-background-color: #FFDC00;
+    -fx-text-fill:  #FFDC00;
+}
+
+.SpelbordWit{
+    -fx-background-color: #F5F5F5;
+    -fx-text-fill:  #F5F5F5;
+}
+
+.SpelbordOranje{
+    -fx-background-color: #FF851B;
+    -fx-text-fill: #FF851B;
+}
+
+.SpelbordPaars{
+    -fx-background-color: #B10DC9;
+    -fx-text-fill:  #B10DC9;
+}
+
+.SpelbordGroen{
+    -fx-background-color: #2ECC40;
+    -fx-text-fill:  #2ECC40;
+}
+
+.SpelbordZwart{
+    -fx-text-fill: #111111;
+    -fx-background-color: #111111;
+    -fx-border-width: 1px;
+    -fx-border-color: white;
+    -fx-border-radius: 50%;
+}
+.SpelbordLeeg{
+    -fx-padding: 10;
+    -fx-border-style: solid ;
+    -fx-border-width: 2px;
+    -fx-border-radius: 50%;
+    -fx-border-color: white;
+
+
+}
+
+
+#KeuzeMakkelijk{
+
+}
+
+.GeelTxt:focused{
+    -fx-background-color : #efefc6;
+    -fx-text-fill: black;
+    -fx-font-family: 'Verdana', 'Calibri', 'sans-serif';
+}
+
+.SmoothBackground{
+    -fx-background-image: url('../fotos/background2.jpg');
+    -fx-background-size:stretch;
+    -fx-background-opacity:0.7;
+    -fx-text-fill:black;
+}
+
+.CodePin{
+    -fx-padding: 10;
+     -fx-border-style: solid ;
+     -fx-border-width: 2px;
+      -fx-border-radius: 50%;
+     -fx-border-color: white;
+}
+
+.choice-boxLadenUitdaging{
+    -fx-background-color:#996666;
+    -fx-background-radius:30;
+    -fx-text-fill:white;
+}
+
+.choice-boxLadenUitdaging:hover{
+    -fx-font-weight: bold;
+    -fx-border-color: #ff6666;
+    -fx-border-width:5px;
+    -fx-cursor:hand;
+    -fx-border-radius:30;
+}
+
+.choice-boxLadenUitdaging:focus{
+    -fx-font-weight: bold;
+    -fx-border-color: #ff6666;
+    -fx-border-width:2.5px;
+    -fx-border-radius:30;
+}
+
+
+

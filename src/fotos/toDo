@@ -1,0 +1,28 @@
+To do:
+    nmr |   stufff
+--------|------------------------------------------------------------------------------------------------------------------------------------------------
+    1   |   GUI use case 3 Robin en Niek
+    2   |   GUI use case 4 Robin en Niek
+    3   |   GUI use case 5 Robin, Niek en Laurens
+    4   |   GUI use case 6 Laurens
+    5   |   GUI use case 7 Laurens
+    6   |   ERD models
+    7   |   use 5 geen nieuwe uitdaging starten indien er al 1 openstaat Guust
+    8   |   indien er geen uitdagingen beschikbaar zijn gepaste melding geven
+    9   |   comment line UI titelgeven aan verschillende klassementen (bv. makkelijk, normaal, moeilijk)
+    10  |   bij keuze moeilijkheidsgraad, catchen als moeilijkheidsgraad nog niet beschikbaar is
+    11  |   terugbuttens bij GUI UC 1
+    12  |   GUI resource bundles duitse vertaling Robin
+    13  |   javadoc 
+ 
+
+
+
+
+
+Eventueel:
+    nmr |   Stufff
+--------|------------------------------------------------------------------------------------------------------------------------------------------------
+    1   |   Pictogram
+    2   |   Geluidjes
+    3   |   Log out button voorzien

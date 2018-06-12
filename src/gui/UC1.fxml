@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<fx:root id="AnchorPane" fx:id="rootPane" maxHeight="0.00" maxWidth="0.00" minHeight="-Infinity" minWidth="-Infinity" style="-fx-background-color: #18121E;" stylesheets="@GUI.css" type="AnchorPane" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <effect>
+      <Blend mode="COLOR_DODGE">
+         <topInput>
+            <Shadow>
+               <input>
+                  <ColorAdjust />
+               </input>
+            </Shadow>
+         </topInput>
+      </Blend>
+   </effect>
+   <children>
+       <AnchorPane fx:id="A_Taal" layoutX="200.0" layoutY="85.0" maxHeight="120.5" maxWidth="150.5" minHeight="-Infinity" minWidth="-Infinity" opacity="0.7" prefHeight="241.0" prefWidth="301.0" style="-fx-background-color: #282835; -fx-border-color: black;">
+         <children>
+             <Button fx:id="btnNederlands" graphicTextGap="60.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleTaal" opacity="0.7" prefHeight="120.0" prefWidth="150.0" styleClass="Taal" stylesheets="@GUI.css" text="Nederlands">       
+            </Button>
+            <Button fx:id="btnDuits" layoutX="150.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" mnemonicParsing="false" onAction="#handleTaal" opacity="0.7" prefHeight="120.0" prefWidth="150.0" styleClass="Taal" stylesheets="@GUI.css" text="Deutsch">
+               </Button>
+             <Button fx:id="btnengels" layoutX="1.0" layoutY="120.0" maxHeight="120.0" maxWidth="150.0" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleTaal" opacity="0.7" prefHeight="120.0" prefWidth="150.0" styleClass="Taal" stylesheets="@GUI.css" text="English">
+               </Button>
+            <Button fx:id="btnFrans" layoutX="150.0" layoutY="121.0" mnemonicParsing="false" onAction="#handleTaal" opacity="0.7" prefHeight="120.0" prefWidth="150.0" styleClass="Taal" stylesheets="@GUI.css" text="Français">
+               </Button>
+            
+            
+         </children>
+      </AnchorPane>
+      
+      <AnchorPane fx:id="A_MeldAan" layoutX="434.0" layoutY="46.0" opacity="0.7" prefHeight="317.0" prefWidth="238.0" style="-fx-background-color: #282835;" visible="false">
+         <effect>
+            <DropShadow blurType="TWO_PASS_BOX" height="176.49" radius="100.7" spread="0.35" width="228.31" />
+         </effect>
+         <children>
+              <TextField fx:id="TXT_gebruikersnaam" layoutX="25.0" layoutY="103.0" opacity="0.88" prefHeight="25.0" prefWidth="188.0" promptText="gebruikersnaam" styleClass="GeelTxt" />
+
+            <PasswordField fx:id="PW_wachtwoord" layoutX="27.0" layoutY="194.0" opacity="0.88" prefHeight="25.0" prefWidth="188.0" promptText="wachtwoord" styleClass="GeelTxt" />
+            <Button fx:id="btnMeldAan" layoutX="27.0" layoutY="259.0" mnemonicParsing="false" onAction="#MeldAan" prefHeight="25.0" prefWidth="188.0" style="-fx-background-radius: 15;" styleClass="OrangeButton" text="Meldaan" />
+            <Label fx:id="lblWelkom" alignment="CENTER" contentDisplay="CENTER" layoutX="25.0" layoutY="23.0" prefHeight="28.0" prefWidth="188.0" style="-fx-font-weight: bold;" text="WELKOM" textAlignment="CENTER" textFill="#fcfcfc">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="A_Registreer" layoutX="102.0" layoutY="205.0" prefHeight="90.0" prefWidth="200.0" visible="false">
+         <children>
+            <Button fx:id="btnRegistreer" layoutX="40.0" layoutY="18.0" mnemonicParsing="false" onAction="#startregistratie" opacity="0.81" prefHeight="53.0" prefWidth="120.0" styleClass="OrangeButton" text="Registreer" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="A_TekstInlogscherm" layoutX="57.0" layoutY="46.0" prefHeight="134.0" prefWidth="398.0" visible="false">
+         <children>
+            <Label fx:id="TXT_Welkom" layoutX="14.0" prefHeight="53.0" prefWidth="257.0" text="Welkom Bij Mastermind, " textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="TXT_Uitleg" layoutX="12.0" layoutY="53.0" prefHeight="53.0" prefWidth="341.0" text="Project eerste jaar toegepaste informatica" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      
+      <AnchorPane fx:id="A_RegistratiePaneel" layoutX="199.0" layoutY="65.0" prefHeight="279.0" prefWidth="302.0" style="-fx-background-color: black;" visible="false">
+         <children>
+            <Label fx:id="lblWelkomRegistratie" alignment="CENTER" layoutX="91.0" layoutY="30.0" prefHeight="17.0" prefWidth="120.0" text="Label" />
+            <TextField fx:id="TXT_GebruikersnaamRegistratie" layoutX="77.0" layoutY="70.0" styleClass="GeelTxt">
+               <tooltip>
+                  <Tooltip fx:id="tool_gebruikersnaam" text="Empty Tooltip" />
+               </tooltip></TextField>
+            <PasswordField fx:id="PW_WachtwoordRegistratie" layoutX="77.0" layoutY="115.0" styleClass="GeelTxt">
+               <tooltip>
+                  <Tooltip fx:id="tool_wachtwoord" text="Empty Tooltip" />
+               </tooltip></PasswordField>
+            <PasswordField fx:id="PW_VerificatieWachtwoordRegistratie" layoutX="77.0" layoutY="161.0" styleClass="GeelTxt">
+               <tooltip>
+                  <Tooltip fx:id="tool_bevestegingswachtwoord" text="Empty Tooltip" />
+               </tooltip></PasswordField>
+               <Button fx:id="btnRegistreerRegistratie" layoutX="77.0" layoutY="218.0" mnemonicParsing="false" onAction="#registreer" prefHeight="25.0" prefWidth="149.0" styleClass="OrangeButton" text="Button" />
+            
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="A_KeuzeMenu" layoutX="211.0" layoutY="46.0" prefHeight="350.0" prefWidth="272.0" style="-fx-background-color: black;" visible="false">
+         <children>
+            <Label fx:id="lbl_KeuzePaneelNaamSpeler" alignment="CENTER" layoutX="7.0" layoutY="14.0" prefHeight="41.0" prefWidth="257.0" text="Label" textFill="WHITE">
+               <font>
+                  <Font name="Verdana Bold" size="23.0" />
+               </font>
+            </Label>
+            <Button fx:id="btn_UC2" layoutX="36.0" layoutY="90.0" mnemonicParsing="false" onAction="#startAnderUC" prefHeight="25.0" prefWidth="200.0" styleClass="OrangeButton,OrangeButtonPadding" text="Button" />
+            <Button fx:id="btn_UC4" layoutX="36.0" layoutY="140.0" mnemonicParsing="false" onAction="#startAnderUC" prefHeight="25.0" prefWidth="200.0" styleClass="OrangeButton,OrangeButtonPadding" text="Button" />
+            <Button fx:id="btn_UC5" layoutX="36.0" layoutY="190.0" mnemonicParsing="false" onAction="#startAnderUC" prefHeight="25.0" prefWidth="200.0" styleClass="OrangeButton,OrangeButtonPadding" text="Button" />
+            <Button fx:id="btn_UC6" layoutX="36.0" layoutY="240.0" mnemonicParsing="false" onAction="#startAnderUC" prefHeight="25.0" prefWidth="200.0" styleClass="OrangeButton,OrangeButtonPadding" text="Button" />
+            <Button fx:id="btn_UC7" layoutX="36.0" layoutY="290.0" mnemonicParsing="false" onAction="#startAnderUC" prefHeight="25.0" prefWidth="200.0" styleClass="OrangeButton,OrangeButtonPadding" text="Button" />
+         </children>
+      </AnchorPane>
+      <Button fx:id="btn_Taal" defaultButton="true" layoutY="2.0" mnemonicParsing="false" onAction="#terugNaarTaal" prefHeight="28.0" prefWidth="120.0" styleClass="terugTaal" text="Button" textFill="WHITE" visible="false" />
+   </children>
+</fx:root>
